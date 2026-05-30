@@ -228,7 +228,7 @@ impl Predictor {
         let (loss, confidence) = match &context.target_tile {
             Some(actual) => {
                 let l = Self::compute_loss(&predicted, actual);
-                let c = (1.0 / (1.0 + l)).max(0.0).min(1.0);
+                let c = (1.0 / (1.0 + l)).clamp(0.0, 1.0);
                 (l, c)
             }
             None => (0.0, 0.0),
