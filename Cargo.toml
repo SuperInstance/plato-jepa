@@ -2,7 +2,7 @@
 name = "plato-jepa"
 version = "0.1.0"
 edition = "2021"
-license = "Apache-2.0"
+license = "MIT"
 description = "JEPA primitives for tile representation learning in PLATO rooms"
 repository = "https://github.com/SuperInstance/plato-jepa"
 
